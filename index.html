@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .task-item {
+            border: 1px solid #eee;
+            background-color: transparent;
+            padding: 10px;
+            margin: 10px auto; 
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+        }
+
+        .task-text {
+            flex-grow: 1; 
+            margin-right: 15px;
+            text-align: left;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #888; 
+        }
+
+        .task-item button {
+            margin-left: 5px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        body{
+            background-image:url('image.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 >
+            TO-DO List
+        </h1>
+    <form style="padding: 3px; margin: 2px;" >
+        <label for="title" style="margin: 15px; padding: 3px;"> Task Title :</label>
+        <input type="text" id="title" name="task">
+        <label for="dis"> Task Description:</label>
+        <input type="text" id="dis" name="task">
+      
+    </form>
+        <br>
+
+        <button id="addbtn">
+           + Add Task
+        </button>
+        <div id="newdiv">
+        
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
